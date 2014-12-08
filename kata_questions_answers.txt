@@ -1,0 +1,13 @@
+Kata Questions
+
+Q: To what extent did the design decisions you made when writing the original programs make it easier or harder to factor out common code?
+
+A: The design allowed for a fair amount of common code between both problems, however the main complexity introducted was to differentiate between the data lines required for parsing and sending the correct regex groupings to the shared parse function.
+
+Q: Was the way you wrote the second program influenced by writing the first?
+
+A: Yes, I wrote the second program almost exactly the same as the first, just using a different regex to split out the required data elements. There was also some added logic to cater to goals for and against being lower/higher compared to a min/max temp which are always lower or higher the the respective corresponding value.
+
+Q: Is factoring out as much common code as possible always a good thing? Did the readability of the programs suffer because of this requirement? How about the maintainability?
+
+A: This is dependant on the situation. In this case the readability was not affected all that much, as it was mainly logic that was added that was as clear as the existing programs. Maintainability is ok, although adding new data parsers may introduce complexity if the regexes required have overlapping matches for a data line. 
